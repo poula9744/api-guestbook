@@ -1,9 +1,12 @@
 name: Deploy GuestbookApp #워크플로워 이름 
 
-on:  #이벤트 정의
-  push:  #2칸
-     branches: #4칸 
-      - master # 6칸 master 깃허브에 push가 되면 작동 
+on: 
+  workflow_dispatch
+
+#on:  #이벤트 정의
+#  push:  #2칸
+#     branches: #4칸 
+#      - master # 6칸 master 깃허브에 push가 되면 작동 
 
 jobs:
   build-and-deploy:
