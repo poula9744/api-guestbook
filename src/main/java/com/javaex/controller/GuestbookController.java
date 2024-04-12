@@ -44,7 +44,7 @@ public class GuestbookController {
 	}
 	
 	//삭제 --> Method가 DELETE == DeleteMapping
-	//@ResponseBodyz
+	//@ResponseBody
 	@DeleteMapping(value="/api/guests/{no}")
 	public String remove(@PathVariable("no") int no, @RequestBody GuestbookVo guestbookVo) {
 		System.out.println("GuestbookController.remove()");
