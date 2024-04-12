@@ -21,7 +21,7 @@ public class GuestbookController {
 	private GuestbookService guestbookService;
 	
 	//리스트
-	//@ResponseBody --> Method가 GET == GetMapping ㅎ
+	//@ResponseBody --> Method가 GET == GetMapping 그만
 	@GetMapping(value="/api/guests")
 	public List<GuestbookVo> list() {
 		System.out.println("GuestbookController.list()");
